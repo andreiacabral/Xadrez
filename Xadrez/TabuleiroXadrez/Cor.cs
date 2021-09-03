@@ -1,4 +1,4 @@
-﻿namespace Xadrez.TabuleiroXadrez
+﻿namespace TabuleiroXadrez
 {
     public enum Cor
     {

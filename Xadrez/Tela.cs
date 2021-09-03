@@ -1,5 +1,5 @@
 ﻿using System;
-using Xadrez.TabuleiroXadrez;
+using TabuleiroXadrez;
 
 namespace Xadrez
 {
@@ -20,7 +20,7 @@ namespace Xadrez
                         Console.Write(tab.peca(i,j)+ " ");
 
                     }
-                    Console.Write(tab.peca(i,j) +" ");
+                    
                 }
                 Console.WriteLine();
             }
