@@ -19,7 +19,7 @@ namespace Xadrez
 
 
 
-            Tela.imprimirTabuleiro(tab);
+            Tela.ImprimirTabuleiro(tab);
 
 
             Console.ReadLine();
