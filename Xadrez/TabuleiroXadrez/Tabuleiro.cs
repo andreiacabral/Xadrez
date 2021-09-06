@@ -13,10 +13,9 @@ namespace TabuleiroXadrez
             this.linhas = linhas;
             this.colunas = colunas;
             pecas = new Peca[linhas, colunas];
-
-  
         }
 
+       
         public Peca peca(int linha, int coluna)
         {
             return pecas[linha, coluna];
@@ -31,13 +30,18 @@ namespace TabuleiroXadrez
         {
             validarPosicao(pos);
             return peca(pos) != null;
-        } 
+        }
 
         public void colocarPeca(Peca p, Posicao pos)
         {
+            if (existePeca(pos))
+            {
+                throw new TabuleiroException("Já existe uma peça nessa posição!");
+            }
             pecas[pos.linha, pos.coluna] = p;
             p.posicao = pos;
         }
+
 
         public bool posicaoValida(Posicao pos)
         {
