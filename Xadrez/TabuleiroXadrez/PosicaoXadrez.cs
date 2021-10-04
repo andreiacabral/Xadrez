@@ -14,7 +14,7 @@ namespace Xadrez.TabuleiroXadrez
             this.linha = linha;
         }
 
-        public Posicao ToPosicao()
+        public Posicao toPosicao()
         {
             return new Posicao(8 - linha, coluna - 'a');
         }
@@ -23,5 +23,6 @@ namespace Xadrez.TabuleiroXadrez
         {
             return " " + coluna + linha;
         }
+
     }
 }
